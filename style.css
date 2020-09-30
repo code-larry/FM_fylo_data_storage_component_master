@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 8rem auto 0;
+}
+
+.first-component,
+.second-component {
+    background-color: #1e2c69;
+}
+
+.first-component {
+    border-radius: 8px 75px 8px 8px;
+    margin-bottom: 1.5rem;
+    padding: 3rem 2.5rem;
+}
+
+.first-component__logo {
+    margin-bottom: 2rem;
+}
+
+.first-component__icons {
+    display: flex;
+}
+
+.first-component__icons--bg {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 8px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.second-component {
+    border-radius: 8px;
+    position: relative;
+    height: 170px;
+    padding: 3rem 2.5rem;
+}
+
+.second-component p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.second-component__progress {
+    height: 1.4rem;
+    background-color: hsl(227, 57%, 18%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.second-component__progress--gradient {
+    height: 0.9rem;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 80%;
+    border-radius: 12px;
+    margin-left: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.second-component__progress--bullet {
+    height: 0.7rem;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 0.7rem;
+    margin-right: 0.2rem;
+}
+
+.second-component__measure {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.second-component__freespace {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    padding: 1rem 1rem;
+    position: absolute;
+    top: calc(100% - 35px);
+    left: calc(50% - 100px);
+}
+
+.second-component__freespace strong {
+    color: #0f102c;
+    font-size: 3rem;
+}
+
+.second-component__freespace span {
+    color: #9d9ea3;
+    text-transform: uppercase;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.attribution {
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 1.8rem;
+}
+
+.attribution a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.attribution a:hover {
+    background-color: #fff;
+    color:#1e2c69;
+    padding: 0.5rem 0.5rem 0.3rem;
+}
