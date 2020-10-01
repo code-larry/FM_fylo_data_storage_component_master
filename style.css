@@ -27,7 +27,7 @@ body {
 }
 
 .first-component {
-    border-radius: 8px 75px 8px 8px;
+    border-radius: 8px 110px 8px 8px;
     margin-bottom: 1.5rem;
     padding: 3rem 2.5rem;
 }
@@ -51,11 +51,10 @@ body {
     align-items: center;
 }
 
-
 .second-component {
     border-radius: 8px;
     position: relative;
-    height: 170px;
+    height: 160px;
     padding: 3rem 2.5rem;
 }
 
@@ -103,12 +102,12 @@ body {
     background-color: #fff;
     text-align: center;
     border-radius: 10px;
-    width: 200px;
+    width: 180px;
     height: 70px;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem 1.2rem;
     position: absolute;
     top: calc(100% - 35px);
-    left: calc(50% - 100px);
+    left: calc(50% - 90px);
 }
 
 .second-component__freespace strong {
@@ -140,4 +139,66 @@ body {
     background-color: #fff;
     color:#1e2c69;
     padding: 0.5rem 0.5rem 0.3rem;
+}
+
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: #0c122c;
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        background-size: 100% 50%, cover;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: auto;
+    }
+
+    .first-component {
+        margin-bottom: 0;
+        margin-right: 2rem;
+        position: relative;
+        top: 50%;
+        width: 30%;
+    }
+
+    .second-component {
+        position: relative;
+        top: 50%;
+        width: 45%;
+    }
+
+    .second-component p {
+        text-align: left;
+    }
+
+    .second-component__freespace {
+        top: -35px;
+        left: calc(100% - 215px);
+        border-bottom-right-radius: 0px;
+        width: 180px;
+    }
+
+    .second-component__freespace::after {
+        content: '';
+        border-left:20px solid transparent;
+        border-right:0px solid transparent;
+        border-top: 20px solid #fff;
+        position: absolute;
+        top: 70px;
+        left: 160px;
+    }
+
+    .attribution {
+        /* margin-top: auto; */
+        min-height: 100px;
+    }
 }
